@@ -29,7 +29,7 @@ namespace UART_BIN {
     /**
      * Binary data reception over UART
      * @param value: none
-     * @return value: 16bit data If return value is 256, reception time out. 
+     * @return value: binary data. (Blocking type. Wait till receive 1byte data).
     */
     // Check RX up to 256 times
     // Blocking type UART RX (wait till receive 1byte data)
