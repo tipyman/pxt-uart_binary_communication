@@ -1,10 +1,8 @@
 {
     "name": "UART Binary communication",
-    "description": "",
+    "description": "Support binary transmission over UART.",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "main.blocks",
