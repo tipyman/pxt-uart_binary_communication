@@ -8,7 +8,7 @@
  * UART communication over binary
  */
 
-//% weight=100 color=#6A0DAD icon="\uf287" block="UART_Bin"
+//% weight=100 color=#6A0DAD icon="\uf287" block="UART_Bin" advanced=true
 namespace UART_BIN {
     let buffer: Buffer = Buffer.create(0)
     let dataBuffer = pins.createBuffer(1);
