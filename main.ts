@@ -32,7 +32,7 @@ namespace UART_BIN {
      * @return value: 16bit data If return value is 256, reception time out. 
     */
     // Check RX up to 256 times
-    // If data reception is OK, return reciept data, if not, retunr 0x100
+    // Blocking type UART RX (wait till receive 1byte data)
     //% blockId=UART_BIN_RX block="Uart bin RX"
     //% weight=80 blockGap=8
     export function UART_BIN_RX(): number {
