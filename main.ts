@@ -36,13 +36,9 @@ namespace UART_BIN {
     //% blockId=UART_BIN_RX block="Uart bin RX"
     //% weight=80 blockGap=8
     export function UART_BIN_RX(): number {
-        l = 0
-        while (l < 256) {
-            buffer = serial.readBuffer(1)
-            if (buffer.length > 0) {
-                return buffer[0]
-            }
-            l += 1
+        buffer = serial.readBuffer(1)
+        if (buffer.length > 0) {
+            return buffer[0]
         }
         return 0x100
     }
